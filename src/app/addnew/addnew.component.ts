@@ -30,7 +30,7 @@ export class AddnewComponent implements OnInit {
   register = new FormGroup({
     id: new FormControl({ value: "", disabled: true }),
     name: new FormControl("", Validators.required),
-    email: new FormControl("", Validators.compose([Validators.required, Validators.email])),
+    email: new FormControl("", Validators.compose([Validators.required])),
     phone: new FormControl("", Validators.required),
   });
 
